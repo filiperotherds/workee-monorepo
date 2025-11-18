@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-const userSubject = z.tuple([
+export const userSubject = z.tuple([
   z.union([
     z.literal("manage"),
     z.literal("get"),

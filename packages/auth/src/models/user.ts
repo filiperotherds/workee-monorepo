@@ -1,5 +1,8 @@
-import { Role } from "../roles";
+import z from "zod";
+import { Role, roleSchema } from "../roles";
 
-export type User = {
-  role: Role;
-};
+export const userSchema = z.object({
+  role: roleSchema,
+});
+
+export type User = z.infer<typeof userSchema>;
