@@ -1,14 +1,23 @@
 {
-    "name": "@repo/auth",
-    "version": "0.0.0",
-    "private": true,
-    "main": "index.ts",
-    "types": "index.ts",
-    "devDependencies": {
-        "@repo/eslint-config": "workspace:*",
-        "@repo/typescript-config": "workspace:*"
-    },
-    "eslintConfig": {
-        "extends": ["@repo/eslint-config/base"]
-    }
+  "name": "@repo/auth",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "check-types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^22.15.3",
+    "eslint": "^9.39.1",
+    "typescript": "5.9.2"
+  },
+  "dependencies": {
+    "@casl/ability": "^6.7.3"
+  }
 }
