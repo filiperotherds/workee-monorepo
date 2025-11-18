@@ -1,0 +1,14 @@
+{
+    "name": "@repo/auth",
+    "version": "0.0.0",
+    "private": true,
+    "main": "index.ts",
+    "types": "index.ts",
+    "devDependencies": {
+        "@repo/eslint-config": "workspace:*",
+        "@repo/typescript-config": "workspace:*"
+    },
+    "eslintConfig": {
+        "extends": ["@repo/eslint-config/base"]
+    }
+}
