@@ -18,6 +18,7 @@
     "typescript": "5.9.2"
   },
   "dependencies": {
-    "@casl/ability": "^6.7.3"
+    "@casl/ability": "^6.7.3",
+    "zod": "^4.1.12"
   }
 }
